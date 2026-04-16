@@ -1,0 +1,18 @@
+/*PALETA DE COLORES
+Oat milk= #E8DBCC
+Favorite mug= #5F0C2F
+Dark chocolate= #3C0E18
+Cherry marshamallow= #EAADC1
+BUSCAR OTRA PALETAAA
+*/
+body{
+    background-color: #E8DBCC;
+}
+.info{
+    background-color: #EAADC1;
+    color: #E8DBCC;
+}
+.educacion{
+    border: 10px solid #5F0C2F;
+    color: #5F0C2F;
+}
