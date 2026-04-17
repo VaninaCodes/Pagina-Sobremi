@@ -1,12 +1,46 @@
-/*PALETA DE COLORES
-Oat milk= #E8DBCC
-Favorite mug= #5F0C2F
-Dark chocolate= #3C0E18
-Cherry marshamallow= #EAADC1
-BUSCAR OTRA PALETAAA
+/* 
+    SCSS HEX 
+--vintage-grape: #493548ff;
+--beige: #eaf0ceff;
+--dusty-grape: #4b4e6dff;
+--air-force-blue: #6a8d92ff;
+--thistle: #ddc4ddff;
+
 */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Karantina:wght@300;400;700&family=Lexend:wght@100..900&family=Modak&display=swap');
+
 body{
-    background-color: #E8DBCC;
+    background-color: #eaf0ceff;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: #eaf0ceff;
+    text-align: center;
+}
+h2{
+    font-family: "Karantina", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+header{
+    background-color:  #493548ff;
+    padding: 10px;
+    width: auto;
 }
 .info{
     background-color: #EAADC1;
@@ -15,4 +49,7 @@ body{
 .educacion{
     border: 10px solid #5F0C2F;
     color: #5F0C2F;
+}
+#logo{
+    width: 80px;
 }
