@@ -1,16 +1,8 @@
-/* 
-    SCSS HEX 
---vintage-grape: #493548ff;
---beige: #eaf0ceff;
---dusty-grape: #4b4e6dff;
---air-force-blue: #6a8d92ff;
---thistle: #ddc4ddff;
 
-*/
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Karantina:wght@300;400;700&family=Lexend:wght@100..900&family=Modak&display=swap');
 
 body{
-    background-color: #eaf0ceff;
+    background-color: #F7F7FA;
     margin: 0;
     padding: 0;
 }
@@ -18,8 +10,8 @@ h1{
     font-family: "Modak", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 100px;
-    color: #eaf0ceff;
+    font-size: 90px;
+    color: #F7F7FA;
     text-align: center;
 }
 h2{
@@ -27,29 +19,178 @@ h2{
     font-weight: 400;
     font-style: normal;
 }
+
 h3{
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
+    padding: 10px;
+}
+ul{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style:oblique;
 }
 p{
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
+figcaption{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+figure{
+    text-align: center;
+}
 header{
-    background-color:  #493548ff;
-    padding: 10px;
+    background-color:  #2F3B56;
     width: auto;
+    padding: 1px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+main-cont{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
 }
 .info{
-    background-color: #EAADC1;
-    color: #E8DBCC;
+    background-color: #7B6158;
+    color: #F7F7FA;
+    padding: 20px;
+    border: 6px solid #7B6158;
+    border-radius: 50px;
+    width: auto;
+    height: fit-content;
+}
+.info h2{
+    font-size: 50px;
+}
+.presentacion{
+    color: #2F3B56;
+    text-align: center;
+    padding: 20px;
 }
 .educacion{
-    border: 10px solid #5F0C2F;
-    color: #5F0C2F;
+    border: 10px solid #2f3b56e8;
+    border-radius: 30px;
+    color: #2F3B56;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+.experiencia{
+    background-color: #1D2027;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+.software{
+    background-color: #2f3b56f2;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 10px;
+}
+.software h3{
+    grid-column: 1 / -1;
+}
+.idiomas{
+    background-color: #A88C7F;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+.contacto{
+    background-color: #7B6158;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+.hobbies{
+    border: 10px solid #7b6158d3;
+    border-radius: 30px;
+    color: #7B6158;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+.perfil{
+    background-color: #2F3B56;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+}
+.sobremi{
+    columns: 3;             
+    column-gap: 20px;        
+}
+.sobremi > div {
+    break-inside: avoid;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 #logo{
-    width: 80px;
+    width: 300px;
+}
+#logo:hover{
+    transform: translateX(3px);
+    transition: transform 0.1s ease;
+}
+#intro{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-sw{
+    width: 40px;
+}
+#perfil{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+#perfil:hover{
+    transform: translateX(3px);
+    transition: transform 0.1s ease;
+}
+/*Funciones que todavia no se usar*/
+@media (max-width: 900px) {
+    .sobremi {
+        columns: 2;
+    }
+    main {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobremi {
+        columns: 1;
+    }
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
