@@ -14,6 +14,12 @@ h1{
     color: #F7F7FA;
     text-align: center;
 }
+#tp-titulo{
+    color: #1D2027;
+    text-align: center;
+    font-size: 40px;
+    
+}
 h2{
     font-family: "Karantina", system-ui;
     font-weight: 400;
@@ -52,6 +58,26 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+nav{
+    background-color: #2F3B56;
+    padding: 10px 20px;
+    width: auto;
+}
+nav a{
+    color: #F7F7FA;
+    font-weight: bold;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+a:hover{
+    color: #7B6158;
+    transition: color 0.3s ease;
 }
 main{
     margin-left: 100px;
@@ -160,6 +186,24 @@ main-cont{
     grid-template-columns: auto auto;
     justify-content: space-around;
     align-items: center;
+}
+#top{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    color: #F7F7FA; 
+    list-style: none; 
+}
+#top a{
+    color: #F7F7FA;
+    font-size: 20px;
+}
+#top a:hover{
+    color: #2F3B56;
+    transition: color 0.3s ease;
+}
+a{
+    color: #2F3B56;
+    text-decoration: none;
 }
 .logo-sw{
     width: 40px;
