@@ -400,6 +400,17 @@ main a{
     text-align: center;
 }
 
+/* ESTE PORTFOLIO */
+#portfolio {
+    background-color: #7B6158;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+
 
 /* ===== TESIS ===== */
 
