@@ -1,12 +1,27 @@
-
+/* ===== FUENTES ===== */
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Karantina:wght@300;400;700&family=Lexend:wght@100..900&family=Modak&display=swap');
 
-body{
+
+/* ===== ESTILOS BASE ===== */
+body {
     background-color: #F7F7FA;
     margin: 0;
     padding: 0;
 }
-h1{
+
+a {
+    color: #2F3B56;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7B6158;
+    transition: color 0.3s ease;
+}
+
+
+/* ===== TIPOGRAFIA GENERAL ===== */
+h1 {
     font-family: "Modak", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -14,44 +29,46 @@ h1{
     color: #F7F7FA;
     text-align: center;
 }
-#tp-titulo{
-    color: #1D2027;
-    text-align: center;
-    font-size: 40px;
-    
-}
-h2{
+
+h2 {
     font-family: "Karantina", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
-h3{
+h3 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
     padding: 10px;
 }
-ul{
-    font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    font-style:oblique;
-}
-p{
+
+p {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
-figcaption{
+
+ul {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: oblique;
+}
+
+figcaption {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
-figure{
+
+figure {
     text-align: center;
 }
-header{
-    background-color:  #2F3B56;
+
+
+/* ===== HEADER ===== */
+header {
+    background-color: #2F3B56;
     width: auto;
     padding: 1px;
     height: 120px;
@@ -59,36 +76,56 @@ header{
     align-items: center;
     justify-content: center;
 }
-nav{
+
+
+/* ===== NAVEGACION ===== */
+nav {
     background-color: #2F3B56;
     padding: 10px 20px;
     width: auto;
 }
-nav a{
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
     color: #F7F7FA;
     font-weight: bold;
     padding: 8px 14px;
     text-decoration: none;
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-a:hover{
-    color: #7B6158;
-    transition: color 0.3s ease;
-}
-main{
+
+
+/* ===== MAIN ===== */
+main {
     margin-left: 100px;
     margin-right: 100px;
 }
-main-cont{
+#main-cont{
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
 }
-.info{
+
+
+/* ===== SECCION INTRO ===== */
+#intro {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion {
+    color: #2F3B56;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
     background-color: #7B6158;
     color: #F7F7FA;
     padding: 20px;
@@ -97,15 +134,37 @@ main-cont{
     width: auto;
     height: fit-content;
 }
-.info h2{
+
+.info h2 {
     font-size: 50px;
 }
-.presentacion{
-    color: #2F3B56;
-    text-align: center;
-    padding: 20px;
+
+/* Logo / imagen de perfil */
+#logo {
+    width: 300px;
 }
-.educacion{
+
+#logo:hover {
+    transform: translateX(3px);
+    transition: transform 0.1s ease;
+}
+
+
+/* ===== SECCION SOBRE MI ===== */
+.sobremi {
+    columns: 3;
+    column-gap: 20px;
+}
+
+.sobremi > div {
+    break-inside: avoid;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Educacion */
+.educacion {
     border: 10px solid #2f3b56e8;
     border-radius: 30px;
     color: #2F3B56;
@@ -113,7 +172,9 @@ main-cont{
     height: fit-content;
     padding: 10px;
 }
-.experiencia{
+
+/* Experiencia */
+.experiencia {
     background-color: #1D2027;
     color: #F7F7FA;
     border-radius: 30px;
@@ -121,28 +182,9 @@ main-cont{
     height: fit-content;
     padding: 10px;
 }
-.software{
-    background-color: #2f3b56f2;
-    color: #F7F7FA;
-    border-radius: 30px;
-    width: auto;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    padding: 10px;
-}
-.software h3{
-    grid-column: 1 / -1;
-}
-.idiomas{
-    background-color: #A88C7F;
-    color: #F7F7FA;
-    border-radius: 30px;
-    width: auto;
-    height: fit-content;
-    padding: 10px;
-}
-.contacto{
+
+/* Contacto */
+.contacto {
     background-color: #7B6158;
     color: #F7F7FA;
     border-radius: 30px;
@@ -150,7 +192,39 @@ main-cont{
     height: fit-content;
     padding: 10px;
 }
-.hobbies{
+
+/* Idiomas */
+.idiomas {
+    background-color: #A88C7F;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+
+/* Software / Tecnologias */
+.software {
+    background-color: #2f3b56f2;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.software h3 {
+    grid-column: 1 / -1;
+}
+
+.logo-sw {
+    width: 40px;
+}
+
+/* Hobbies */
+.hobbies {
     border: 10px solid #7b6158d3;
     border-radius: 30px;
     color: #7B6158;
@@ -158,67 +232,191 @@ main-cont{
     height: fit-content;
     padding: 10px;
 }
-.perfil{
+
+
+/* ===== FOOTER ===== */
+footer {
     background-color: #2F3B56;
-    color: #F7F7FA;
-    border-radius: 30px;
+    padding: 15px;
+    margin-top: 30px;
     width: auto;
+    color: #F7F7FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.sobremi{
-    columns: 3;             
-    column-gap: 20px;        
+
+/* ===== PAGINA PROYECTOS ===== */
+main a{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
 }
-.sobremi > div {
+/* Titulos */
+.proyecto-titulo{
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #2F3B56;
+    text-align: center;
+}
+
+.personales-titulo{
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #7B6158;
+    text-align: center;
+}
+
+.tesis-titulo{
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #2F3B56;
+    text-align: center;
+}
+
+/*Lista del top*/
+#top{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/*Color del enlace + hover*/
+#top a{
+    color: #F7F7FA;
+}
+
+#top a:hover{
+    color: #1D2027;
+    transition: color 0.3s ease;
+}
+
+
+/* ===== TRABAJOS PRACTICOS ===== */
+.tp {
+    columns: 3;
+    column-gap: 20px;
+}
+
+.tp > div {
     break-inside: avoid;
     width: 100%;
     margin-bottom: 20px;
     box-sizing: border-box;
 }
-#logo{
-    width: 300px;
-}
-#logo:hover{
-    transform: translateX(3px);
-    transition: transform 0.1s ease;
-}
-#intro{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-    align-items: center;
-}
-#top{
-    font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    color: #F7F7FA; 
-    list-style: none; 
-}
-#top a{
-    color: #F7F7FA;
-    font-size: 20px;
-}
-#top a:hover{
+
+/* TP IAS */
+.tp-ias {
+    border: 10px solid #2F3B56;
+    border-radius: 30px;
     color: #2F3B56;
-    transition: color 0.3s ease;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
 }
-a{
-    color: #2F3B56;
-    text-decoration: none;
+
+/* TP BLOG DE CAFES */
+.tp-blog {
+    border: 10px solid #323b52b1;
+    border-radius: 30px;
+    color: #323b52b1;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
 }
-.logo-sw{
-    width: 40px;
+
+/* TP BUSCADOR DE PANADERIA */
+.tp-buscador {
+    border: 10px solid #2f3b56d6;
+    border-radius: 30px;
+    color: #2f3b56d6;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
 }
-#perfil{
+
+/* ===== TRABAJOS PERSONALES ===== */
+#personales {
+    columns: 3;
+    column-gap: 20px;
+}
+
+#personales > div {
+    break-inside: avoid;
     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
-#perfil:hover{
-    transform: translateX(3px);
-    transition: transform 0.1s ease;
+
+/* to hell with it */
+.tp-pink {
+    background-color: #7B6158;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
 }
-/*Funciones que todavia no se usar*/
+
+/* THE FOREST */
+.tp-forest {
+    background-color: #826b63be;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+
+/* WEAKHERO */
+.tp-weakhero {
+    background-color: #7b6158d3;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+
+/* TO DO LIST */
+.tp-todo {
+    background-color: #A88C7F;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* ===== TESIS ===== */
+
+/* TP BLOG DE CAFES */
+.tesis {
+    border: 10px solid #2F3B56;
+    border-radius: 30px;
+    color: #2F3B56;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
     .sobremi {
         columns: 2;
